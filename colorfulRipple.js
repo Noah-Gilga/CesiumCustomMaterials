@@ -19,6 +19,7 @@ var matGLSL =
     'texcol.z = z; \n' +
     'm.diffuse = vec3(col*texcol); \n' +
     'm.alpha = 1.0; \n' +
+    //如果这里需要透明度根据变化可以使用 'm.alpha = abs(sin((r+czm_frameNumber* 0.0015)/0.013)-1.0); \n' +
     'return m; \n' +
     '} \n'
 
